@@ -10,9 +10,13 @@ end
 gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
-# Use devise for authentication
+# Use devise for authentication and bootstrap for views
 gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
 gem 'milia', github: 'jekuno/milia', branch: 'issue#76'
+gem 'twitter-bootstrap-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
