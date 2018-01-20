@@ -10,7 +10,8 @@ end
 gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
-# Use devise for authentication and bootstrap for views
+# Use devise for authentication and bootstrap (and other gems) for views
+gem 'bootstrap-datepicker-rails'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'font-awesome-rails'

@@ -33,12 +33,12 @@ class ConfirmationsController < Milia::ConfirmationsController
       flash[:notice] = 'Please choose a password and confirm it.'
       prep_do_show
     end
+
+    if @confirmable.skip_confirm_change_password
+      sign_in_tenanted_and_redirect(resource)
+    end
   end
 
-
-  if @confirmable.skip_confirm_change_password
-    sign_in_tenanted_and_redirect(resource)
-  end
   def after_confirmation_path_for(resource_name, resource)
     if user_signed_in?
       root_path
